@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2727"
+    tools:context=".HomeActivity">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="132dp"
+        android:layout_height="44dp"
+        android:layout_above="@+id/seekBar2"
+        android:layout_alignStart="@+id/seekBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="363dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="132dp"
+        android:layout_height="44dp"
+        android:layout_above="@+id/seekBar3"
+        android:layout_alignStart="@+id/seekBar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="407dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="132dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="125dp"
+        android:layout_marginStart="31dp"
+        android:text="@string/red"
+        android:textColor="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="80dp"
+        android:text="@string/green"
+        android:textColor="@android:color/holo_green_light"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="37dp"
+        android:text="@string/blue"
+        android:textColor="@android:color/holo_blue_dark"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="466dp" />
+</RelativeLayout>
